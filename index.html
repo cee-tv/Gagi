@@ -128,7 +128,7 @@
       </form>
       <div id="signin-message" class="mt-3"></div>
       <div class="mt-3 text-center">
-        <a href="https://iptvphkey.pages.dev/" target="_blank" class="btn btn-outline-secondary btn-sm">
+        <a href="https://cee-tv.github.io/iptvphkey/" target="_blank" class="btn btn-outline-secondary btn-sm">
           <i class="bi bi-link-45deg"></i> Get Today's Key
         </a>
       </div>
@@ -152,7 +152,7 @@
     async function fetchTodayKey() {
       todayKeyDate = getTodayKeyDate();
       const fileName = `${todayKeyDate}.txt`;
-      const url = `https://raw.githubusercontent.com/Warren122093/iptvphkey/main/keys/${fileName}`;
+      const url = `https://raw.githubusercontent.com/cee-tv/iptvphkey/main/keys/${fileName}`;
       try {
         const response = await fetch(url);
         if (!response.ok) throw new Error("Key not found.");
